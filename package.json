@@ -1,0 +1,34 @@
+{
+  "name": "borokero-iot-http",
+  "version": "0.0.1",
+  "description": "http broker based on aedes",
+  "homepage": "https://github.com/borokero/borokero-iot-http#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borokero/borokero-iot-http.git"
+  },
+  "main": "./borokero.js",
+  "scripts": {
+    "version": "echo $npm_package_version",
+    "start": "node borokero.js",
+    "test": "mocha --recursive --bail --reporter spec test"
+  },
+  "author": "Hadi Mahdavi",
+  "license": "ISC",
+  "dependencies": {
+    "@authbroker/authbroker": "0.0.5",
+    "callback-stream": "^1.1.0",
+    "concat-stream": "^2.0.0",
+    "corsify": "^2.1.0"
+  },
+  "devDependencies": {
+    "aedes": "^0.45.0",
+    "chai": "~3.5.0",
+    "mocha": "~3.2.0",
+    "pre-commit": "~1.2.2",
+    "sinon": "~1.17.7",
+    "superagent": "~3.3.1",
+    "supertest": "~2.0.1",
+    "tmp": "0.0.31"
+  }
+}
